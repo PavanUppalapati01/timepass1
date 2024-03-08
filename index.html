@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Animation</title>
+    <style>
+        body.b {
+            overflow: hidden;
+            animation: bodyColorAnimation 10s linear infinite;
+        }
+
+        @keyframes bodyColorAnimation {
+            0% {
+                background-color: blue;
+            }
+            25% {
+                background-color: bisque;
+            }
+            75% {
+                background-color: green;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+
+        .animation {
+            position: absolute;
+            animation: welcomeAnimation 10s linear infinite;
+        }
+
+        @keyframes welcomeAnimation {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(50vh, 80vh);
+            }
+            75% {
+                transform: translate(80vh, 50vh);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body class="b">
+    <center>
+        <h1>Welcome!</h1>
+    </center>
+    <div class="animation">😃</div>
+</body>
+</html>
